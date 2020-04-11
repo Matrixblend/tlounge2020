@@ -11,7 +11,7 @@ module.exports = {
   // social
   heading: 'We will be right back!',
   subHeading:
-    "Tiger has an opinion on his food and accessories, you should listen.",
+    "Tiger has an opinion on his food and accessories, listen.",
   socialLinks: [
     
     {
