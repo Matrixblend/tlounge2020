@@ -22,12 +22,12 @@ module.exports = {
     {
       icon: 'fa-facebook',
       name: 'Facebook',
-      url: 'https://facebook.com/tigerslounge',
+      url: 'https://www.facebook.com/tigersloungeshop/',
     },
     {
-      icon: 'fa-envelope-o',
-      name: 'Email',
-      url: 'mailto:support@tigerslounge.com',
+      icon: 'fa-instagram',
+      name: 'Instagram',
+      url: 'https://www.instagram.com/tigerslounge',
     },
   ],
 };
