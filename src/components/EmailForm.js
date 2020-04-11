@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import addToMailchimp from "gatsby-plugin-mailchimp"
 
 export class EmailForm extends Component {
   constructor() {
@@ -14,6 +15,33 @@ export class EmailForm extends Component {
     setTimeout(() => {
       this.setState({ message: '' });
     }, 3000);
+
+    addToMailchimp(email, {
+      fields,
+    }).then(data => {
+      if (data.result === "error") {
+        // if message mentioned already subcribed send user to auth page with email address matched to the mailchimp data.
+        let subscribed = data.msg.match(/subscrib/g)
+        let tooMany = data.msg.match(/too/g)
+        if (subscribed) {
+
+          this.setState({message: data.msg, email: email}) 
+          // navigate("/user", {
+           
+          //   replace: true,
+          // })
+        }
+        if (tooMany) {
+        }
+
+        this.setState({ message: data.msg })
+      } else {
+        // confirm
+        this.setState({ message: data.msg })
+        // navigate("/user", { state: { message: data.msg }, replace: true })
+      }
+    })
+
   }
 
   render() {

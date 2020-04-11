@@ -7,9 +7,15 @@
 /* Header */
 
 	#header {
+		img {
+			display: block;
+  		margin: 0 auto;
+  		width: 70%;
+		}
 		h1 {
 			font-size: 3.25em;
 			margin: 0 0 (_size(element-margin) * 0.275) 0;
+			text-align: center;
 		}
 
 		p {
@@ -20,6 +26,7 @@
 		a {
 			color: inherit;
 		}
+	
 
 		@include breakpoint('<=small') {
 			h1 {
