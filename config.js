@@ -27,7 +27,7 @@ module.exports = {
     {
       icon: 'fa-instagram',
       name: 'Instagram',
-      url: 'https://www.instagram.com/tigerslounge',
+      url: 'https://www.instagram.com/tigersloungeshop',
     },
   ],
 };
