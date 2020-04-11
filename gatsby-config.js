@@ -5,10 +5,10 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     titleTemplate: "%s . Tigers Lounge",
-    description: `Tiger has an opinion on his pet food and pet accessories, you should listen `,
+    description: `Tiger has an opinion on pet food and pet toys. `,
     keywords: "Pet food, cat food, cat toys",
     image: "/src/assets/images/img/website-icon.png",
-    url: "http://blog.tigerslounge.com",
+    url: "http://www.tigerslounge.com",
     twitterUsername: "@tigerslounge",
   },
   plugins: [

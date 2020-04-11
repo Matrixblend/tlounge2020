@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-eventually/`, // This path is subpath of your hosting https://domain/portfolio
   // social
-  heading: 'The Store will be right back',
+  heading: 'We will be right back!',
   subHeading:
     "Tiger has an opinion on his food and accessories, you should listen.",
   socialLinks: [
